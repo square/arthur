@@ -1,7 +1,7 @@
 require './lib/arthur/project.rb'
 require './lib/arthur/error.rb'
 require 'webmock/rspec'
-
+require './spec/spec_helper'
 
 describe Arthur::Project do
   describe '.list' do

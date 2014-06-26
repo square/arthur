@@ -1,5 +1,4 @@
 require_relative 'api.rb'
-require './spec/spec_helper'
 
 module Arthur
   class Project
