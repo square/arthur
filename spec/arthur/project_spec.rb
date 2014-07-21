@@ -1,7 +1,7 @@
-require './lib/arthur/project.rb'
-require './lib/arthur/error.rb'
-require 'webmock/rspec'
-require './spec/spec_helper'
+require 'arthur/project'
+require 'arthur/error'
+
+require 'spec_helper'
 
 describe Arthur::Project do
   describe '.list' do
@@ -154,7 +154,7 @@ describe Arthur::Project do
 
     it "returns the correct list" do
       stub_request(:get, full_url(path)).to_return(:body => api_response)
-      responses = example_project.bugsnag_errors
+      responses = example_project.errors
       expect(responses.first.data['id']).to eq("518031bcd775355c48a1cd4e")
       expect(responses.last.data['id']).to  eq("518031bcd775355c48a1cd4f")
     end
@@ -170,7 +170,7 @@ describe Arthur::Project do
       it "returns the correct list" do
         stub_request(:get, full_url(path)).to_return(:body => first_api_response, :headers => {:link => "<http://localhost/projects/537ab6c3f697833600000001/errors?direction=desc&offset=#{offset}&per_page=30&sort=last_received>; rel=\"next\""})
         stub_request(:get, full_url(path, offset: offset)).to_return(:body => second_api_response)
-        responses = example_project.bugsnag_errors
+        responses = example_project.errors
         expect(responses.length).to eq(50)
       end
     end

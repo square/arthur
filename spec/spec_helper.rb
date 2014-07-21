@@ -1,3 +1,5 @@
+require 'webmock/rspec'
+require 'pry'
 
 RSpec.configure do |c|
   c.before do

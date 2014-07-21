@@ -1,5 +1,4 @@
 require 'json'
-require 'pry'
 require 'open-uri'
 require 'rest-client'
 
@@ -15,7 +14,6 @@ module Arthur
 
         next_offset = nil
         if response.headers[:link]
-          # binding.pry
           rel_next = response.headers[:link].match(/\<(.*)\>; rel=\"next\"/)
           if rel_next
             next_offset = URI.unescape(rel_next[1].match(/[&?]offset=([^&>]*)/)[1])
@@ -35,7 +33,7 @@ module Arthur
     end
 
     def self.prune_options(options={})
-      options.merge(auth_token: auth_token).delete_if{ |key, value| value.nil? }
+      options.merge(auth_token: auth_token).delete_if{ |_, value| value.nil? }
     end
 
     def self.full_path(path)

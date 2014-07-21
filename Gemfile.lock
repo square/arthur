@@ -3,15 +3,8 @@ GEM
   specs:
     addressable (2.3.6)
     coderay (1.1.0)
-    columnize (0.8.9)
     crack (0.4.2)
       safe_yaml (~> 1.0.0)
-    debugger (1.6.8)
-      columnize (>= 0.3.1)
-      debugger-linecache (~> 1.2.0)
-      debugger-ruby_core_source (~> 1.3.5)
-    debugger-linecache (1.2.0)
-    debugger-ruby_core_source (1.3.5)
     diff-lcs (1.2.5)
     method_source (0.8.2)
     mime-types (2.3)
@@ -19,9 +12,6 @@ GEM
       coderay (~> 1.0)
       method_source (~> 0.8)
       slop (~> 3.4)
-    pry-debugger (0.2.2)
-      debugger (~> 1.3)
-      pry (~> 0.9.10)
     rest-client (1.6.7)
       mime-types (>= 1.16)
     rspec (3.0.0)
@@ -47,7 +37,6 @@ PLATFORMS
 
 DEPENDENCIES
   pry
-  pry-debugger
   rest-client
   rspec
   webmock

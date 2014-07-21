@@ -1,6 +1,6 @@
-require './lib/arthur/error.rb'
-require 'webmock/rspec'
-require './spec/spec_helper'
+require 'arthur/error'
+
+require 'spec_helper'
 
 describe Arthur::Error do
   before do

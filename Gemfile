@@ -6,5 +6,4 @@ group :test do
   gem 'webmock'
   gem 'rspec'
   gem 'pry'
-  gem 'pry-debugger'
 end

@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = %w(bella@squareup.com dspencer@squareup.com)
   spec.description   = 'Consumes the Bugsnag API.'
   spec.summary       = 'Consumes the Bugsnag API, for real!'
-  spec.homepage      = "https://github.com/typekit/slackbot"
+  spec.homepage      = "https://stash.corp.squareup.com/projects/SQ/repos/arthur/browse"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -20,6 +20,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency('rest-client')
 
   spec.add_development_dependency('rake')
+  spec.add_development_dependency('pry')
   spec.add_development_dependency('rspec', '>= 3.0')
   spec.add_development_dependency('webmock', '>= 1.18')
 end
