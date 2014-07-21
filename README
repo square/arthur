@@ -8,12 +8,15 @@ Get project details
 	Arthur::Project.fetch(project_id)
 
 Get project errors
-Arthur::Project.fetch(project_id).bugsnag_errors
+Arthur::Project.fetch(project_id).errors
 
 Get error details
 	Arthur::Error.fetch(error_id)
 
 Get error count in environment
 	Arthur::Error.fetch(error_id).count_in_environment(env)
+
+Run tests
+    rake
 
 Arthur is released under the MIT License (http://www.opensource.org/licenses/MIT).
