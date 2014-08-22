@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = %w(bella@squareup.com dspencer@squareup.com)
   spec.description   = 'Consumes the Bugsnag API.'
   spec.summary       = 'Consumes the Bugsnag API, for real!'
-  spec.homepage      = "https://stash.corp.squareup.com/projects/SQ/repos/arthur/browse"
+  spec.homepage      = "https://github.com/square/arthur"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
