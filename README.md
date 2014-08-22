@@ -1,6 +1,9 @@
 Arthur eats bugs! Specifically, it consumes Bugsnag's API to allow you to view project details, errors,
 error details etc.
 
+####Installation
+    gem install arthur
+    
 ####Initial setup
 	Arthur::Api.configure(base_url, auth_token)
 
