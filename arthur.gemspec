@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "arthur"
-  spec.version       = "0.0.1"
+  spec.version       = "1.0.0"
   spec.authors       = ['Bella Norvig', 'Danny Spencer']
   spec.email         = %w(bella@squareup.com dspencer@squareup.com)
   spec.description   = 'Consumes the Bugsnag API.'
